@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://c73pmbi1ljow3"]
 
-[ext_resource type="Script" path="res://Scenes/diamond.gd" id="1_he8nh"]
+[ext_resource type="Script" path="res://Scripts/diamond.gd" id="1_he8nh"]
 [ext_resource type="Texture2D" uid="uid://b3qpimmp6y5ym" path="res://Sprites/Big Diamond Idle (18x14).png" id="1_m5s2y"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_25nme"]
@@ -92,10 +92,9 @@ position = Vector2(3, -2)
 shape = SubResource("CircleShape2D_25nme")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-0.5, 0)
-scale = Vector2(1.72222, 1.92857)
+scale = Vector2(1.83333, 1.92857)
 sprite_frames = SubResource("SpriteFrames_85fch")
 animation = &"diamont"
-frame_progress = 0.772387
+frame_progress = 0.358873
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
